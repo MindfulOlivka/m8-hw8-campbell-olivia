@@ -33,18 +33,45 @@ header {
   background-color: var(--primary-color);
   padding: 48px 0;
   border-bottom: var(--secondary-color) 6px solid;
+  animation: fadeBackground 7s alternate infinite ;
+  
+}
+
+@keyframes fadeBackground {
+  from { background-color: #06b3bc;}
+  to { background-color: #F78828; }
 }
 
 /* header link animations! */
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  
 }
+
+header a:hover {
+  color: #FDD219;
+}
+
+
+  
 /* end header link animations */
+
+button:hover {
+  background-color: #FA5456;
+  transform: translateY(-5px);
+  transition: 200ms;
+}
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+}
+
+main a:hover {
+  background-color: #06b3bc;
+  color: white;
+  
 }
 /* end article link transitions */
 
@@ -57,6 +84,7 @@ main > article, nav{
 nav {
   display: flex;
 }
+
 
 nav > a:not(:first-of-type){
   margin-left: 24px;
