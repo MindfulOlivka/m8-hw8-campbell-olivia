@@ -33,7 +33,7 @@ header {
   background-color: var(--primary-color);
   padding: 48px 0;
   border-bottom: var(--secondary-color) 6px solid;
-  animation: fadeBackground 7s alternate infinite ;
+  animation: fadeBackground 8s alternate infinite ;
   
 }
 
@@ -53,7 +53,15 @@ header a:hover {
   color: #FDD219;
 }
 
+.logo {
+  animation: hover 2s alternate infinite linear; 
+}
 
+@keyframes hover {
+  to {
+    transform: translateY(-15px)
+  }
+}
   
 /* end header link animations */
 
